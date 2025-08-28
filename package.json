@@ -4,6 +4,8 @@
   "description": "A sample project to start a discussion about the importance of static code analysis for testing code.",
   "main": "cypress.config.js",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "cy:open": "cypress open",
     "test": "cypress run"
   },
@@ -11,6 +13,12 @@
   "author": "Walmyr <wlsf82@gmail.com> (https://walmyr.dev/)",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^15.0.0"
+    "@eslint/js": "^9.34.0",
+    "@eslint/json": "^0.13.2",
+    "@eslint/markdown": "^7.2.0",
+    "cypress": "^15.0.0",
+    "eslint": "^9.34.0",
+    "eslint-plugin-cypress": "^5.1.1",
+    "globals": "^16.3.0"
   }
 }
