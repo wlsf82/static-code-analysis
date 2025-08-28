@@ -1,7 +1,5 @@
 describe('Sauce Demo', () => {
-
   it('successfully logs in', () => {
-
     cy.visit('/')
 
     cy.get('[data-test="username"]').type(Cypress.env('SAUCEDEMO_USER'))
@@ -9,7 +7,5 @@ describe('Sauce Demo', () => {
     cy.get('[data-test="login-button"').click()
 
     cy.url().should('be.equal', `${Cypress.config('baseUrl')}/inventory.html`)
-
   })
-
 })
